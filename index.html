@@ -8,6 +8,41 @@
   <body>
     <header>
       <nav>high score</nav>
+      <p>timer</p>
     </header>
+    <main>
+      <section>
+        <h1>Coding Quiz Challenge</h1>
+        <h2>
+          Answer the following questions correctly as fast as possible to get
+          the high score!
+        </h2>
+        <button type="button">Start Quiz</button>
+      </section>
+      <section id="quiz-window">
+        <h1 id="quiz-question">quiz question</h1>
+        <ol id="quiz-options">
+          <li>quiz option 1</li>
+          <li>quiz option 2</li>
+          <li>quiz option 3</li>
+          <li>quiz option 4</li>
+        </ol>
+        <h2 id="answer-display">You got it right!</h2>
+      </section>
+      <section id="score-display">
+        <h1>All done!</h1>
+        <p>Final score display</p>
+        <form>
+          <label for="initials">Initals:</label>
+          <input type="text" />
+          <input type="submit" />
+        </form>
+      </section>
+      <section id="high-score-display">
+        <ol id="high-score-list"></ol>
+        <button type="button">Restart Quiz</button>
+        <button type="reset">Clear High Scores</button>
+      </section>
+    </main>
   </body>
 </html>
