@@ -1,0 +1,16 @@
+:root {
+  --purple: purple;
+  --pink: pink;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
