@@ -8,9 +8,45 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+}
+
+display {
+  border: 2px;
+}
+
+#welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quiz-window {
+  display: none;
+}
+
+#score-display {
+  display: none;
+}
+
+#high-score-display {
+  display: none;
+}
+
+h1 {
+  font-size: 275%;
+}
+
+#start-button {
+  background: purple;
+  width: 175px;
+  height: 70px;
+  font-size: 160%;
+  border-radius: 22px;
 }
