@@ -9,7 +9,7 @@
   <body>
     <header>
       <nav>high score</nav>
-      <p>timer</p>
+      <div id="timer">Time:</div>
     </header>
     <main>
       <section class="display" id="welcome-message">
@@ -18,7 +18,9 @@
           Answer the following questions correctly as fast as possible to get
           the high score!
         </h2>
-        <button type="button" id="start-button">Start Quiz</button>
+        <button onclick="showElement()" type="button" id="start-button">
+          Start Quiz
+        </button>
       </section>
       <section class="display" id="quiz-window">
         <h1 id="quiz-question">quiz question</h1>

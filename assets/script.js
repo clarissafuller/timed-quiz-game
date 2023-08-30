@@ -1,25 +1,38 @@
 //DOM ELEMENTS==========================================
 var timerEl = document.querySelector("#timer");
+var quizWindowEl = document.querySelector("#quiz-window");
+var welcomeWindowEl = document.querySelector("#welcome-message");
 //DATA===================================================
 
 //FUNCTIONS===============================================
-function timer() {
-  var seconds = 60;
+function settimer() {
+  var secondsLeft = 60;
   var timeInterval = setInterval(function () {
-    document.timerEl("timer").innerHTML = "00:" + seconds;
-    seconds--;
-    if (seconds < 0) {
-      clearInterval(timer);
+    secondsLeft--;
+    timerEl.textContent = "Time: " + secondsLeft;
+    if (secondsLeft === 0) {
+      clearInterval(timeInterval);
     }
   }, 1000);
+}
+
+function showElement() {
+  var x = document.quizWindowEl("quiz-window");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
 //USER INTERACTIONS=======================================
 //user clicks start game
 var startButtonEl = document.querySelector("#start-button");
-var quizWindowEl = document.querySelector("#quiz-window");
 
 startButtonEl.addEventListener("click", function () {
-  display.quizWindowEl;
+  settimer();
+  showElement();
+  //   quizWindowEl.setAttribute("display", "contents");
+  //   welcomeWindowEl.setAttribute("display", "none");
 });
 //timer starts
 //first question appears
@@ -41,4 +54,3 @@ startButtonEl.addEventListener("click", function () {
 //the high score list appears
 
 //INITIALIZATIONS==========================================
-timer();
