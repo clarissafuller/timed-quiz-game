@@ -1,9 +1,18 @@
 //DOM ELEMENTS==========================================
-
+var timerEl = document.querySelector("#timer");
 //DATA===================================================
 
 //FUNCTIONS===============================================
-
+function timer() {
+  var seconds = 60;
+  var timeInterval = setInterval(function () {
+    document.timerEl("timer").innerHTML = "00:" + seconds;
+    seconds--;
+    if (seconds < 0) {
+      clearInterval(timer);
+    }
+  }, 1000);
+}
 //USER INTERACTIONS=======================================
 //user clicks start game
 var startButtonEl = document.querySelector("#start-button");
@@ -32,3 +41,4 @@ startButtonEl.addEventListener("click", function () {
 //the high score list appears
 
 //INITIALIZATIONS==========================================
+timer();
